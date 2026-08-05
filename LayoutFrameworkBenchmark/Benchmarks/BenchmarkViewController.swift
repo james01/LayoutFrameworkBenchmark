@@ -19,6 +19,16 @@ class BenchmarkViewController: UITableViewController {
         // Ordered alphabetically
         //
         
+        ViewControllerData(title: "Mine", factoryBlock: { viewCount in
+            let data = FeedItemData.generate(count: viewCount)
+            return CollectionViewControllerMineView(data: data)
+        }),
+        
+        ViewControllerData(title: "QuickLayout", factoryBlock: { viewCount in
+            let data = FeedItemData.generate(count: viewCount)
+            return CollectionViewControllerQuickLayoutView(data: data)
+        }),
+        
         ViewControllerData(title: "Auto Layout", factoryBlock: { viewCount in
             let data = FeedItemData.generate(count: viewCount)
             return CollectionViewControllerFeedItemAutoLayoutView(data: data)
@@ -28,35 +38,10 @@ class BenchmarkViewController: UITableViewController {
             let data = FeedItemData.generate(count: viewCount)
             return CollectionViewControllerFeedItemFlexLayoutView(data: data)
         }),
-        
-        ViewControllerData(title: "LayoutKit 10.1", factoryBlock: { viewCount in
-            let data = FeedItemData.generate(count: viewCount)
-            return CollectionViewControllerFeedItemLayoutKitView(data: data)
-        }),
 
         ViewControllerData(title: "Manual Layout", factoryBlock: { viewCount in
             let data = FeedItemData.generate(count: viewCount)
             return CollectionViewControllerFeedItemManualView(data: data)
-        }),
-		
-		ViewControllerData(title: "NKFrameLayoutKit 2.5", factoryBlock: { viewCount in
-			let data = FeedItemData.generate(count: viewCount)
-			return CollectionViewControllerFeedItemNKFrameLayoutKitView(data: data)
-		}),
-        
-        ViewControllerData(title: "NotAutoLayout 3.2", factoryBlock: { viewCount in
-            let data = FeedItemData.generate(count: viewCount)
-            return CollectionViewControllerFeedItemNotAutoLayoutView(data: data)
-        }),
-        
-        ViewControllerData(title: "PinLayout 1.10.6", factoryBlock: { viewCount in
-            let data = FeedItemData.generate(count: viewCount)
-            return CollectionViewControllerFeedItemPinLayoutView(data: data)
-        }),
-
-        ViewControllerData(title: "Texture 3.2", factoryBlock: { viewCount in
-            let data = FeedItemData.generate(count: viewCount)
-            return TextureCollectionViewController(data: data)
         }),
 
         ViewControllerData(title: "UIStackView", factoryBlock: { viewCount in

@@ -1,0 +1,24 @@
+{
+  "originHash" : "89ebeac60f8478a75560d3a2cb02649f12e795e105a203b11d51ca155d556ba5",
+  "pins" : [
+    {
+      "identity" : "quicklayout",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/facebook/QuickLayout",
+      "state" : {
+        "branch" : "main",
+        "revision" : "38020f2c293bbd24e20b651d4214169fbe69965b"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-syntax.git",
+      "state" : {
+        "revision" : "4799286537280063c85a32f09884cfbca301b1a1",
+        "version" : "602.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}

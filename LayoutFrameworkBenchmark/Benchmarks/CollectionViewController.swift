@@ -20,15 +20,15 @@ import UIKit
 /// uses `CollectionViewController` directly.
 ///
 @available(iOS 9, *)
+
 class CollectionViewControllerFeedItemUIStackView: CollectionViewController<FeedItemUIStackView> {}
 
+class CollectionViewControllerMineView: CollectionViewController<MineView> {}
+class CollectionViewControllerQuickLayoutView: CollectionViewController<QuickLayoutView> {}
 class CollectionViewControllerFeedItemAutoLayoutView: CollectionViewController<FeedItemAutoLayoutView> {}
-class CollectionViewControllerFeedItemLayoutKitView: CollectionViewController<FeedItemLayoutKitView> {}
 class CollectionViewControllerFeedItemManualView: CollectionViewController<FeedItemManualView> {}
-class CollectionViewControllerFeedItemNotAutoLayoutView: CollectionViewController<FeedItemNotAutoLayoutView> {}
 class CollectionViewControllerFeedItemPinLayoutView: CollectionViewController<FeedItemPinLayoutView> {}
 class CollectionViewControllerFeedItemFlexLayoutView: CollectionViewController<FeedItemFlexLayoutView> {}
-class CollectionViewControllerFeedItemNKFrameLayoutKitView: CollectionViewController<NKFrameLayoutKitView> {}
 
 /// A UICollectionView controller where each cell's content view is a DataBinder.
 class CollectionViewController<ContentViewType: UIView>: UICollectionViewController, UICollectionViewDelegateFlowLayout where ContentViewType: DataBinder {

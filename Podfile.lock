@@ -1,88 +1,24 @@
 PODS:
   - FlexLayout (2.2.2):
     - Yoga (= 3.2.1)
-  - LayoutKit (10.1.0)
-  - NKFrameLayoutKit (2.5)
-  - NotAutoLayout (3.2.0)
-  - PINCache (3.0.4):
-    - PINCache/Arc-exception-safe (= 3.0.4)
-    - PINCache/Core (= 3.0.4)
-  - PINCache/Arc-exception-safe (3.0.4):
-    - PINCache/Core
-  - PINCache/Core (3.0.4):
-    - PINOperation (~> 1.2.3)
   - PinLayout (1.10.6)
-  - PINOperation (1.2.3)
-  - PINRemoteImage/Core (3.0.4):
-    - PINOperation
-  - PINRemoteImage/iOS (3.0.4):
-    - PINRemoteImage/Core
-  - PINRemoteImage/PINCache (3.0.4):
-    - PINCache (~> 3.0.4)
-    - PINRemoteImage/Core
-  - Texture (3.2.0):
-    - Texture/AssetsLibrary (= 3.2.0)
-    - Texture/Core (= 3.2.0)
-    - Texture/MapKit (= 3.2.0)
-    - Texture/Photos (= 3.2.0)
-    - Texture/PINRemoteImage (= 3.2.0)
-    - Texture/Video (= 3.2.0)
-  - Texture/AssetsLibrary (3.2.0):
-    - Texture/Core
-  - Texture/Core (3.2.0)
-  - Texture/MapKit (3.2.0):
-    - Texture/Core
-  - Texture/Photos (3.2.0):
-    - Texture/Core
-  - Texture/PINRemoteImage (3.2.0):
-    - PINRemoteImage/iOS (~> 3.0.0)
-    - PINRemoteImage/PINCache
-    - Texture/Core
-  - Texture/Video (3.2.0):
-    - Texture/Core
   - Yoga (3.2.1)
 
 DEPENDENCIES:
   - FlexLayout
-  - LayoutKit (from `https://github.com/LinkedInAttic/LayoutKit.git`)
-  - NKFrameLayoutKit
-  - NotAutoLayout
   - PinLayout
-  - Texture
 
 SPEC REPOS:
   trunk:
     - FlexLayout
-    - NKFrameLayoutKit
-    - NotAutoLayout
-    - PINCache
     - PinLayout
-    - PINOperation
-    - PINRemoteImage
-    - Texture
     - Yoga
-
-EXTERNAL SOURCES:
-  LayoutKit:
-    :git: https://github.com/LinkedInAttic/LayoutKit.git
-
-CHECKOUT OPTIONS:
-  LayoutKit:
-    :commit: 1f1b067b6b11a0779ea6b6ccd976585a1d7bb79b
-    :git: https://github.com/LinkedInAttic/LayoutKit.git
 
 SPEC CHECKSUMS:
   FlexLayout: c73d8da295a01937efece5531e12a692a3b9dd07
-  LayoutKit: 66478bb3af5ce4519a056d9465bc4c7585d2350b
-  NKFrameLayoutKit: 8485fd4fb04c2c99e38e4dfd4b65a99ce10689b9
-  NotAutoLayout: 4723ad82a21a7c6c60c823fff7f7c29467811b92
-  PINCache: d9a87a0ff397acffe9e2f0db972ac14680441158
   PinLayout: e2fceb4cbfdf49f3569fc242a7dfa0da4fb9aa06
-  PINOperation: fb563bcc9c32c26d6c78aaff967d405aa2ee74a7
-  PINRemoteImage: 6256a644f4996991f124811763c7286b2a63ff94
-  Texture: 61e86ea2ee124f545be40293b54b5b8986006da2
   Yoga: 636ce73bd247407928a7df089f3bc3675916b3ff
 
-PODFILE CHECKSUM: 995a4143850fbe450aace4486444d8fba0d0e46e
+PODFILE CHECKSUM: e052df87e271dded327ddc7febe2a540a0431288
 
-COCOAPODS: 1.16.2
+COCOAPODS: 1.17.0
